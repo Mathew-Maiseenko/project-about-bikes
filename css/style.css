@@ -1,0 +1,905 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-style: 100%;
+  line-height: 1;
+  font-style: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-style: inherit;
+  font-weight: 400;
+}
+
+body {
+  height: 500vh;
+}
+
+.Wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.Container {
+  max-width: 70%;
+  margin: 0 auto;
+  height: 100%;
+}
+@media (max-width: 480px) {
+  .Container {
+    max-width: 95%;
+  }
+}
+
+.Bicycle-Navigation {
+  text-decoration: none;
+}
+.Bicycle-Navigation .Bicycle-Navigation__background {
+  width: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.Bicycle-Navigation .Bicycle-Navigation__Content {
+  position: absolute;
+  left: 0;
+  top: 5vh;
+  font-family: Lato;
+  font-size: calc(8px + 8 * ((100vw - 320px) / 1280));
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #4d4959;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.Bicycle-Navigation .Bicycle-Navigation__Content .Bicycle-Navigation__About-us {
+  margin-right: 2vw;
+}
+.Bicycle-Navigation .Bicycle-Navigation__Content .Bicycle-Navigation__Work::before {
+  content: ".";
+  margin-right: 2vw;
+}
+.Bicycle-Navigation .Bicycle-Navigation__Content .Bicycle-Navigation__image {
+  margin: 0px 3vw;
+  max-width: 10%;
+}
+.Bicycle-Navigation .Bicycle-Navigation__Content .Bicycle-Navigation__Shop {
+  margin-right: 2vw;
+}
+.Bicycle-Navigation .Bicycle-Navigation__Content .Bicycle-Navigation__Contact::before {
+  content: ".";
+  margin-right: 2vw;
+}
+.Bike-Header {
+  height: 60vh;
+  background-color: #f7f7f7;
+}
+.Bike-Header .Bike-Header__Content {
+  min-height: 100%;
+  padding: 5vh 0;
+}
+
+.Paragragh {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.Paragragh .Paragragh__Logo {
+  width: 5%;
+  height: auto;
+}
+.Paragragh .Paragragh__Title {
+  font-family: Lato;
+  font-size: calc(14px + 6 * ((100vw - 320px) / 1280));
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #353738;
+}
+.Paragragh .Paragragh__Title .Paragragh__Title-Sub-Information {
+  color: #848789;
+}
+.Paragragh .Paragragh__Text {
+  font-family: Lato;
+  font-size: calc(12px + 6 * ((100vw - 320px) / 1280));
+  line-height: 2;
+  font-weight: 400;
+  color: #848789;
+  text-align: center;
+}
+
+.Small-Paragragh {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.Small-Paragragh .Small-Paragragh__Logo {
+  width: 5%;
+  height: auto;
+}
+.Small-Paragragh .Small-Paragragh__Title {
+  font-family: Lato;
+  font-size: calc(12px + 4 * ((100vw - 320px) / 1280));
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #353738;
+  text-align: center;
+}
+.Small-Paragragh .Small-Paragragh__Text {
+  font-family: Lato;
+  font-size: calc(10px + 4 * ((100vw - 320px) / 1280));
+  line-height: 1.5;
+  font-weight: 400;
+  color: #848789;
+  text-align: center;
+}
+
+.Mix-Row-List {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 50vh;
+}
+.Mix-Row-List .Mix-Row-List__Main-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.Mix-Row-List .Mix-Row-List__Main-image .Mix-Row-List__Icone-Logo {
+  width: 15%;
+  height: auto;
+}
+.Mix-Row-List .Mix-Row-List__Column {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.Mix-Row-List .Mix-Row-List__Column .Mix-Row-List__Secondary-image {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+.Mix-Row-List .Mix-Row-List__Column .Mix-Row-List__Information {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  padding: 10% 2vw;
+}
+
+.Vintage-Oliva .Vintage-Oliva__Content {
+  min-height: 50vh;
+}
+.Vintage-Oliva .Vintage-Oliva__Content .Vintage-Oliva__Main-image {
+  min-width: 70vw;
+  background: url(/img/Image__3__Main_bike_image.jpg) 0 0/cover no-repeat;
+}
+@media (max-width: 480px) {
+  .Vintage-Oliva .Vintage-Oliva__Content .Vintage-Oliva__Main-image {
+    display: none;
+  }
+}
+.Vintage-Oliva .Vintage-Oliva__Content .Vintage-Oliva__Main-image .Vintage-Oliva__Icone-Logo {
+  height: auto;
+}
+.Vintage-Oliva .Vintage-Oliva__Content .Vintage-Oliva__Column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.Vintage-Oliva .Vintage-Oliva__Content .Vintage-Oliva__Column .Vintage-Oliva__Secondary-image {
+  min-width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.Vintage-Oliva .Vintage-Oliva__Content .Vintage-Oliva__Column .Vintage-Oliva__Secondary-image .Vintage-Oliva__Icone-Logo-Phone {
+  position: absolute;
+  width: 15%;
+  z-index: 3;
+  display: none;
+}
+@media (max-width: 480px) {
+  .Vintage-Oliva .Vintage-Oliva__Content .Vintage-Oliva__Column .Vintage-Oliva__Secondary-image .Vintage-Oliva__Icone-Logo-Phone {
+    display: inline-block;
+  }
+}
+
+.La-Boriosa .La-Boriosa__Content {
+  min-height: 50vh;
+}
+.La-Boriosa .La-Boriosa__Content .La-Boriosa__Main-image {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  min-width: 70vw;
+  background: url(/img/Image__4__Main_bike_image.jpg) 0 0/cover no-repeat;
+}
+@media (max-width: 480px) {
+  .La-Boriosa .La-Boriosa__Content .La-Boriosa__Main-image {
+    display: none;
+  }
+}
+.La-Boriosa .La-Boriosa__Content .La-Boriosa__Main-image .La-Boriosa__Icone-Logo {
+  height: auto;
+}
+.La-Boriosa .La-Boriosa__Content .La-Boriosa__Column {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+.La-Boriosa .La-Boriosa__Content .La-Boriosa__Column .La-Boriosa__Secondary-image {
+  min-width: 100%;
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.La-Boriosa .La-Boriosa__Content .La-Boriosa__Column .La-Boriosa__Secondary-image .La-Boriosa__Icone-Logo-Phone {
+  position: absolute;
+  width: 15%;
+  z-index: 3;
+  display: none;
+}
+@media (max-width: 480px) {
+  .La-Boriosa .La-Boriosa__Content .La-Boriosa__Column .La-Boriosa__Secondary-image .La-Boriosa__Icone-Logo-Phone {
+    display: inline-block;
+  }
+}
+
+.Retro-Bike-Name .Retro-Bike-Name__Content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 50vh;
+}
+.Retro-Bike-Name .Retro-Bike-Name__Content .Retro-Bike-Name__First-Main-image {
+  min-width: 30vw;
+  background: url(/img/Image__5__First_Main_bike_image.jpg) 0 0/cover no-repeat;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 480px) {
+  .Retro-Bike-Name .Retro-Bike-Name__Content .Retro-Bike-Name__First-Main-image {
+    display: none;
+  }
+}
+.Retro-Bike-Name .Retro-Bike-Name__Content .Retro-Bike-Name__First-Main-image .Retro-Bike-Name__Icone-Logo {
+  width: 40%;
+  height: auto;
+}
+.Retro-Bike-Name .Retro-Bike-Name__Content .Retro-Bike-Name__Second-Main-image {
+  min-width: 30vw;
+  background: url(/img/Image__5__Second_Main_bike_image.jpg) 0 0/cover no-repeat;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 480px) {
+  .Retro-Bike-Name .Retro-Bike-Name__Content .Retro-Bike-Name__Second-Main-image {
+    display: none;
+  }
+}
+.Retro-Bike-Name .Retro-Bike-Name__Content .Retro-Bike-Name__Column {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.Retro-Bike-Name .Retro-Bike-Name__Content .Retro-Bike-Name__Column .Retro-Bike-Name__Secondary-image {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  min-width: 100%;
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.Retro-Bike-Name .Retro-Bike-Name__Content .Retro-Bike-Name__Column .Retro-Bike-Name__Secondary-image .Retro-Bike-Name__Icone-Logo-Phone {
+  position: absolute;
+  width: 15%;
+  z-index: 3;
+  display: none;
+}
+@media (max-width: 480px) {
+  .Retro-Bike-Name .Retro-Bike-Name__Content .Retro-Bike-Name__Column .Retro-Bike-Name__Secondary-image .Retro-Bike-Name__Icone-Logo-Phone {
+    display: inline-block;
+  }
+}
+.Retro-Bike-Name .Retro-Bike-Name__Content .Retro-Bike-Name__Column .Retro-Bike-Name__Information {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  padding: 5% 3vw;
+}
+
+.Bike-Twitter {
+  height: 60vh;
+  padding: 10vh 0;
+  background-color: #f7f7f7;
+}
+.Bike-Twitter .Bike-Twitter__Content {
+  height: 30vh;
+}
+.Bike-Twitter .Paragragh__Sircles {
+  text-align: center;
+  margin-top: 10vh;
+}
+.Bike-Twitter .Paragragh__Sircles li {
+  display: inline-block;
+  width: 2vh;
+  height: 2vh;
+  background-color: #a9afb3;
+  border-radius: 50%;
+  padding: 0.1vh;
+}
+.Bike-Twitter .Paragragh__Sircles li div {
+  width: 1.8vh;
+  height: 1.8vh;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+@media (max-width: 480px) {
+  .Bike-Photos {
+    display: none;
+  }
+}
+.Bike-Photos__Content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 60vh;
+  width: 100%;
+}
+.Bike-Photos__Content .Bike-Photos__Photo-First-Vertical-Element {
+  min-width: 16.6666666667vw;
+  height: 60vh;
+  background: url(/img/Photo_1_vertical_element.jpg) 0 0/cover no-repeat;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+.Bike-Photos__Content .Photo-First-Column {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  min-width: 16.6666666667vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.Bike-Photos__Content .Photo-First-Column__ROW {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-width: 33.3333333333vw;
+  height: 30vh;
+}
+.Bike-Photos__Content .Photo-First-Column__Horisontal-element {
+  min-width: 33.3333333333vw;
+  height: 30vh;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  background: url(/img/Photo_1_horisontal_element.jpg) 0 0/cover no-repeat;
+}
+.Bike-Photos__Content .Photo-First-Column .Photo-First-Column__ROW-Elements {
+  min-width: 16.6666666667vw;
+  height: 30vh;
+}
+.Bike-Photos__Content .Photo-First-Column .Photo-First-Column__ROW-Elements:first-child {
+  background: url(/img/Photo_list_1_row_1_element.jpg) 0 0/cover no-repeat;
+}
+.Bike-Photos__Content .Photo-First-Column .Photo-First-Column__ROW-Elements:last-child {
+  background: url(/img/Photo_list_1_row_2_element.jpg) 0 0/cover no-repeat;
+}
+.Bike-Photos__Content .Bike-Photos__Photo-Second-Vertical-Element {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  min-width: 16.6666666667vw;
+  background: url(/img/Photo_2_vertical_element.jpg) 0 0/cover no-repeat;
+}
+.Bike-Photos__Content .Photo-Second-Column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
+.Bike-Photos__Content .Photo-Second-Column__ROW {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-width: 33.3333333333vw;
+  height: 30vh;
+}
+.Bike-Photos__Content .Photo-Second-Column__Horisontal-element {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  min-width: 33.3333333333vw;
+  height: 30vh;
+  background: url(/img/Photo_2_horisontal_element.jpg) 0 0/cover no-repeat;
+}
+.Bike-Photos__Content .Photo-Second-Column__Horisontal-element-Layer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(100, 194, 158, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.Bike-Photos__Content .Photo-Second-Column__Horisontal-element-Logo {
+  width: 10%;
+  height: auto;
+  display: block;
+}
+.Bike-Photos__Content .Photo-Second-Column .Photo-Second-Column__Horisontal-element-Layer-Text {
+  display: block;
+  margin-top: 1vh;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+}
+.Bike-Photos__Content .Photo-Second-Column .Photo-Second-Column__ROW-Elements {
+  min-width: 16.6666666667vw;
+  height: 30vh;
+}
+.Bike-Photos__Content .Photo-Second-Column .Photo-Second-Column__ROW-Elements:first-child {
+  background: url(/img/Photo_list_2_row_1_element.jpg) 0 0/cover no-repeat;
+}
+.Bike-Photos__Content .Photo-Second-Column .Photo-Second-Column__ROW-Elements:last-child {
+  background: url(/img/Photo_list_2_row_2_element.jpg) 0 0/cover no-repeat;
+}
+
+.Shop_Button .Shop_Button__Content {
+  background-color: #282f35;
+  height: 24vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.Shop_Button .Shop_Button__Content .Shop_Button__Button {
+  min-width: 20vw;
+  height: 25%;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 0.49);
+  text-align: center;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+}
+.Shop_Button .Shop_Button__Content .Shop_Button__Button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+}
+.Stay-on {
+  min-width: 100%;
+  height: 50vh;
+  padding: 12vh 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 480px) {
+  .Stay-on {
+    padding: 1vh 1vw;
+    height: 40vh;
+  }
+}
+.Stay-on__Content {
+  margin: 0 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.Stay-on__Content .Stay-on__Logo {
+  width: 15%;
+}
+.Stay-on__Content .Stay-on__Text {
+  font-family: Lato;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 400;
+  font-style: italic;
+  color: #848789;
+}
+.Stay-on__Content .Stay-on__Row {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  width: 100%;
+  min-height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.Stay-on__Content .Stay-on__Row .Stay-on__Email-Input {
+  min-width: 78.5%;
+  min-height: 100%;
+  background-color: #ffffff;
+  border: 1px solid #d3d7d9;
+  padding-left: 10%;
+  font-family: Lato;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: italic;
+  color: #848789;
+}
+.Stay-on__Content .Stay-on__Row .Stay-on__Email-Input::-webkit-input-placeholder {
+  font-family: Lato;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: italic;
+  color: #929292;
+  opacity: 0.8;
+}
+.Stay-on__Content .Stay-on__Row .Stay-on__Email-Input::-moz-placeholder {
+  font-family: Lato;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: italic;
+  color: #929292;
+  opacity: 0.8;
+}
+.Stay-on__Content .Stay-on__Row .Stay-on__Email-Input:-ms-input-placeholder {
+  font-family: Lato;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: italic;
+  color: #929292;
+  opacity: 0.8;
+}
+.Stay-on__Content .Stay-on__Row .Stay-on__Email-Input::-ms-input-placeholder {
+  font-family: Lato;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: italic;
+  color: #929292;
+  opacity: 0.8;
+}
+.Stay-on__Content .Stay-on__Row .Stay-on__Email-Input::placeholder {
+  font-family: Lato;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: italic;
+  color: #929292;
+  opacity: 0.8;
+}
+.Stay-on__Content .Stay-on__Row .Stay-on__Button {
+  background-color: #64c29e;
+  min-width: 20%;
+  min-height: 100%;
+  font-family: Lato;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #ffffff;
+}
+.Footer {
+  background-color: #f7f7f7;
+  height: 20vh;
+}
+.Footer .Container {
+  height: 100%;
+  position: relative;
+}
+.Footer .Container .Footer__Content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+.Footer .Container .Footer__Content .Footer__Place-information-Text {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  font-style: italic;
+  color: #848789;
+}
+.Footer .Container .Footer__Content .Footer__Place-information-Title {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 17px;
+  font-weight: 700;
+  color: #848789;
+}
+@media (max-width: 480px) {
+  .Footer .Container .Footer__Content .Footer__Social-networks {
+    display: none;
+  }
+}
+.Footer .Container .Footer__Content .Footer__Author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.Footer .Container .Footer__Content .Footer__Author p {
+  margin-right: 0.5vw;
+}
